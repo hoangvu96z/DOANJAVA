@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1070478996564",
+    "project_id": "vdsto-login"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1070478996564:android:6994859d6d342014",
+        "android_client_info": {
+          "package_name": "com.hvstudy.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1070478996564-v0kkgdorta8msgj21i2a3lv9q14lktgu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCy-HgJGLS05tcrUyrd6MHwotlWs1Vzd1g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_doctruyen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hvstudy.myapplication.Doctruyen">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:background="#046c96"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9">
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spDanhsach"
+                android:layout_weight="0.1"
+                android:popupBackground="?android:attr/detailsElementBackground"
+                android:spinnerMode="dialog" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/btn_star_big_on"
+                android:layout_weight="0.9"
+                android:id="@+id/btnNext"
+                android:elevation="0dp"
+                style="@android:style/Widget.Material.ImageButton"
+                android:background="?android:attr/listDivider" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1">
+
+
+            <TextView
+                android:text="LOADING ..."
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="16dp"
+                android:fontFamily="serif"
+                android:id="@+id/txtNoidung"
+                android:typeface="serif"
+                android:textColor="@android:color/background_dark"
+                android:textAlignment="viewStart" />
+
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

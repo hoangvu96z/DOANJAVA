@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="typeface_list">
+        <item>Default</item>
+        <item>Calibri</item>
+        <item>Times New Roman</item>
+    </string-array>
+
+    <string-array name="size_list">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+        <item>Extra Large</item>
+    </string-array>
+
+    <string-array name="style_list">
+        <item>Default</item>
+        <item>Light</item>
+        <item>Medium</item>
+        <item>Dark</item>
+    </string-array>
+
+</resources>

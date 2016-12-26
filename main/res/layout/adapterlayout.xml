@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="72dp">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            app:srcCompat="?android:attr/alertDialogIcon"
+            android:id="@+id/imgAvatar" />
+
+        <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:textColor="#000000"
+                android:id="@+id/txtTittle"
+                android:text="Tua de truyen"
+                />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="20dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="#616168"
+                    android:textSize="15sp"
+                    android:text="Đánh giá:"
+                    android:id="@+id/txtDanhgia"/>
+
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:numStars="5"
+                    android:stepSize="0.1"
+                    android:rating="2.5"
+                    android:id="@+id/ratingBar"
+                    style="@android:style/Widget.DeviceDefault.Light.RatingBar.Small" />
+
+            </TableRow>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:id="@+id/txtID"
+
+                android:text="ID"/>
+        </LinearLayout>
+    </TableRow>
+</LinearLayout>

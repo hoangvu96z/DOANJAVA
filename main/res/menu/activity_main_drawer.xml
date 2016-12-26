@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navLastest"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Mới cập nhật" />
+        <item
+            android:id="@+id/navPopular"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Xem nhiều nhất" />
+        <item
+            android:id="@+id/navKiemHiep"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Kiếm Hiệp" />
+        <item
+            android:id="@+id/navNgonTinh"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Ngôn tình" />
+        <item
+            android:id="@+id/navTruyenMa"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Truyện Ma"
+            />
+        <item
+            android:id="@+id/navTruyenTrinhTham"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Trinh Thám"
+            />
+        <item
+            android:id="@+id/navTruyenTeen"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Truyện Teen"
+            />
+    </group>
+
+    <item android:title="Cá nhân">
+        <menu>
+            <item
+                android:id="@+id/nav_register"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Đăng ký" />
+            <item
+                android:id="@+id/nav_sign_in"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Đăng nhập" />
+        </menu>
+    </item>
+
+</menu>

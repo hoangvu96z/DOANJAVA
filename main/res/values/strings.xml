@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">VDSto</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_dangky">Dangky</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <string name="typeface">Font</string>
+    <string name="style">Reading style</string>
+    <string name="size">Text size</string>
+    <string name="textView7">After setting...</string>
+
+</resources>
