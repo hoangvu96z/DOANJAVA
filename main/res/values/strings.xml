@@ -1,16 +1,47 @@
 <resources>
     <string name="app_name">VDSto</string>
 
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
 
-    <string name="action_settings">Settings</string>
-    <string name="title_activity_dangky">Dangky</string>
-    <string name="title_activity_settings">Settings</string>
+    <string name="action_settings">Cài đặt</string>
+    <string name="title_activity_dangky">Đăng ký</string>
+    <string name="title_activity_settings">Cài đặt</string>
+    <string name="user_not_login_title">CHƯA ĐĂNG NHẬP</string>
+    <string name="rate_question">Bạn đánh giá mấy điểm cho truyện này?</string>
+    <string name="rate_button">Đánh giá</string>
+    <string name="user_not_login_toast">Bạn chưa đăng nhập để sử dụng chức năng này!</string>
+    <string name="user_hello">Xin chào </string>
+    <string name="signup_fill_in">Bạn hãy nhập đầy đủ thông tin!</string>
+    <string name="signup_successful">Bạn đã đăng ký và đăng nhập thành công!</string>
+    <string name="signup_error">Mật khẩu và mật khẩu nhập lại chưa trùng khớp!</string>
+    <string name="signup_unsuccessful">Đã có lỗi : Tên đăng nhập này đã được sử dụng</string>
+    <string name="regester_successful">Bạn đã đăng nhập thành công !</string>
+    <string name="regester_unsuccessful">Tên đăng nhập hoặc mật khẩu không đúng!</string>
+    <string name="read_last_character">Bạn đã ở chương cuối !</string>
+    <string name="favorite_add">Thêm vào danh sách yêu thích thành công</string>
+    <string name="favorite_del">Xoá khỏi danh sách yêu thích thành công</string>
+    <string name="typeface">Font chữ</string>
+    <string name="style">Kiểu nền</string>
+    <string name="size">Kích thước chữ</string>
+    <string name="textView7" translatable="false">After Setting</string>
+    <string name="lastest">Mới nhất</string>
+    <string name="mostviewed">Xem nhiều nhất</string>
+    <string name="herosword">Kiếm hiệp</string>
+    <string name="love">Ngôn tình</string>
+    <string name="ghost">Truyện ma</string>
+    <string name="password">Mật khẩu: </string>
+    <string name="username">Tên đăng nhập: </string>
+    <string name="retype_password">Nhập lại mật khẩu: </string>
+    <string name="reconnoitre">Trinh thám</string>
+    <string name="loggedin">Bạn đã đăng nhâp rồi!</string>
+    <string name="signedout">Bạn đã đăng xuất thành công</string>
+    <string name="teen">Truyện teen</string>
+    <string name="favorite">Yêu thích</string>
+    <string name="signin">Đăng nhập</string>
+    <string name="signout">Đăng xuất</string>
+    <string name="save">Lưu lại</string>
+    <string name="download_beta">Chức năng này chưa có sẵn</string>
 
-    <string name="typeface">Font</string>
-    <string name="style">Reading style</string>
-    <string name="size">Text size</string>
-    <string name="textView7">After setting...</string>
 
 </resources>

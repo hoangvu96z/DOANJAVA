@@ -16,4 +16,8 @@ public class Tuadetruyen {
         this.danhgia = d;
         this.URLhinh = u;
     }
+    public String getTentruyen ()
+    {
+        return this.tentruyen;
+    }
 }

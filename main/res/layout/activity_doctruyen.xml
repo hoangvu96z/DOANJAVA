@@ -17,32 +17,22 @@
             android:layout_width="match_parent"
             android:background="#046c96"
             android:layout_height="match_parent"
-            android:layout_weight="0.9">
+            android:layout_weight="0.8">
 
             <Spinner
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:id="@+id/spDanhsach"
-                android:layout_weight="0.1"
+                android:layout_weight="1"
                 android:popupBackground="?android:attr/detailsElementBackground"
                 android:spinnerMode="dialog" />
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@android:drawable/btn_star_big_on"
-                android:layout_weight="0.9"
-                android:id="@+id/btnNext"
-                android:elevation="0dp"
-                style="@android:style/Widget.Material.ImageButton"
-                android:background="?android:attr/listDivider" />
-
         </LinearLayout>
 
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:id="@+id/scrStory"
             android:layout_weight="0.1">
-
 
             <TextView
                 android:text="LOADING ..."
@@ -54,11 +44,53 @@
                 android:typeface="serif"
                 android:textColor="@android:color/background_dark"
                 android:textAlignment="viewStart" />
-
-
-
         </ScrollView>
 
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3d3d3d">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/settings"
+                android:id="@+id/imageSettings"
+                android:layout_weight="0.25"/>
+            <TextView
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/textLoadSave"
+                android:layout_weight="1"
+                android:gravity="center" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/unlike"
+                android:layout_weight="0.25"
+                android:id="@+id/imgFavorite"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/download"
+                android:id="@+id/imgDownload"
+                android:layout_weight="0.25" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/back"
+                android:id="@+id/imgNext"
+                android:layout_weight="0.25"/>
+
+        </LinearLayout>
+
     </LinearLayout>
+
 
 </RelativeLayout>

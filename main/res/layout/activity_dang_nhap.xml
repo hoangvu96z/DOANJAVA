@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_dang_nhap"
     android:layout_width="match_parent"
+    android:background="@drawable/grey"
+    android:orientation="vertical"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -10,4 +13,67 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.hvstudy.myapplication.DangNhap">
 
-</RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/login"
+        android:id="@+id/imageView3" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <TextView
+            android:text="@string/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:layout_weight="0.6"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/edtSign_User"
+            android:layout_weight="0.4"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <TextView
+            android:text="@string/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:id="@+id/textView2"
+            android:layout_weight="0.6"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/edtSign_Pass"
+            android:layout_weight="0.4"/>
+
+    </TableRow>
+
+    <Button
+        android:text="@string/signin"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="@drawable/bluebutton"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:id="@+id/btnSignIn" />
+</LinearLayout>

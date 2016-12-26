@@ -4,8 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/content_dangky"
     android:layout_width="match_parent"
+    android:padding="5dp"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/grey"
     android:paddingLeft="5dp"
     android:paddingRight="5dp"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
@@ -15,7 +17,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/signup"
+        app:srcCompat="@drawable/register2"
         android:id="@+id/imageView2" />
 
     <TableRow
@@ -24,7 +26,7 @@
         android:padding="5dp">
 
         <TextView
-            android:text="Nhập tên đăng nhập:"
+            android:text="@string/username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/textView"
@@ -48,7 +50,7 @@
         android:padding="5dp">
 
         <TextView
-            android:text="Nhập mật khẩu:"
+            android:text="@string/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="#000000"
@@ -72,7 +74,7 @@
         android:padding="5dp">
 
         <TextView
-            android:text="Nhập lại mật khẩu:"
+            android:text="@string/retype_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="#000000"
@@ -91,9 +93,13 @@
     </TableRow>
 
     <Button
-        android:text="Đăng ký"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:text="@string/title_activity_dangky"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:background="@drawable/bluebutton"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="16sp"
         android:id="@+id/btnSignUp" />
 
 </LinearLayout>

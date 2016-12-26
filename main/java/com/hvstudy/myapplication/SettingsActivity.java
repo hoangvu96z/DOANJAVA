@@ -5,8 +5,11 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 public class SettingsActivity extends AppCompatActivity {
 
@@ -16,14 +19,20 @@ public class SettingsActivity extends AppCompatActivity {
     Spinner spnTypeface;
     Spinner spnSize;
     Spinner spnStyle;
-
+    Button save;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+        save = (Button) findViewById(R.id.btnSave);
+        save.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
         typeface = getResources().getStringArray(R.array.typeface_list);
         spnTypeface = (Spinner) findViewById(R.id.spnFont);
         ArrayAdapter<String> adapterTypeface = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, typeface);

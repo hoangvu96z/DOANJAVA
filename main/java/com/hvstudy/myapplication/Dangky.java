@@ -25,6 +25,7 @@ public class Dangky extends AppCompatActivity {
     EditText usr,pas,repas;
     Button sgup;
     String ketqua="false";
+    String ten,mk,nlmk;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,48 +36,21 @@ public class Dangky extends AppCompatActivity {
         pas = (EditText) findViewById(R.id.edtPass);
         repas = (EditText) findViewById(R.id.edtRePass);
         sgup = (Button) findViewById(R.id.btnSignUp);
+
         sgup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                final String ten,mk,nlmk;
+
                 ten = usr.getText().toString();
                 mk = pas.getText().toString();
                 nlmk = repas.getText().toString();
-
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
                         new Kiemtranguoidung().execute("http://hvtekshop.com/signup.php?usr="+ten+"&pas="+mk);
                     }
                 });
-                if(mk.equals(nlmk))
-                {
-                    if(ketqua.equals("true"))
-                    {
-                      //  Toast.makeText(Dangky.this,"Bạn đã đăng ký thành công !",Toast.LENGTH_SHORT).show();
-                        ketqua="false";
-                        Intent resultMain = new Intent();
-                        resultMain.putExtra("username",ten);
-                        setResult(2,resultMain);
-//                        Intent toMain = new Intent(Dangky.this,MainActivity.class);
-//                        startActivity(toMain);
-                        finish();
-                    }
-                    else
-                    {
-                        Toast.makeText(Dangky.this,"Đã có lỗi xãy ra: Tên đăng nhập đã được sử dụng",Toast.LENGTH_SHORT).show();
-                        usr.setText("");
-                        pas.setText("");
-                        repas.setText("");
-                    }
 
-                }
-                else
-                {
-                    Toast.makeText(Dangky.this,"Mật khẩu và mật khẩu nhập lại chưa trùng khớp",Toast.LENGTH_SHORT).show();
-                    pas.setText("");
-                    repas.setText("");
-                }
             }
         });
     }
@@ -85,7 +59,7 @@ public class Dangky extends AppCompatActivity {
 
         @Override
         protected String doInBackground(String... strings) {
-            return docNoiDung_Tu_URL(strings[0]);
+            return MainActivity.docNoiDung_Tu_URL(strings[0]);
         }
         @Override
         protected void onPostExecute(String s)
@@ -100,30 +74,35 @@ public class Dangky extends AppCompatActivity {
             } catch (JSONException e) {
                 e.printStackTrace();
             }
-            usr.setText(ketqua);
-        }
-    }
-    private static String docNoiDung_Tu_URL(String theUrl)
-    {
-        StringBuilder content = new StringBuilder();
-        try
-        {
-            URL url = new URL(theUrl);
-            URLConnection urlConnection = url.openConnection();
-            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));
-            String line;
-            while ((line = bufferedReader.readLine()) != null)
-            {
-                content.append(line + "\n");
+
+            if (mk.equals("") || ten.equals("") || nlmk.equals("")) {
+                Toast.makeText(Dangky.this, getString(R.string.signup_fill_in), Toast.LENGTH_SHORT).show();
+            } else if (mk.equals(nlmk)) {
+                if (ketqua.equals("true")) {
+                    Toast.makeText(Dangky.this, getString(R.string.signup_successful), Toast.LENGTH_SHORT).show();
+                    ketqua = "false";
+                    Intent resultMain = new Intent();
+                    MainActivity.username= ten;
+                    MainActivity.isLogined = 1;
+                    resultMain.putExtra("user", ten);
+                    setResult(2, resultMain);
+                    finish();
+                } else {
+                    Toast.makeText(Dangky.this, getString(R.string.signup_unsuccessful), Toast.LENGTH_SHORT).show();
+                    usr.setText("");
+                    pas.setText("");
+                    repas.setText("");
+                }
+
+            } else {
+                Toast.makeText(Dangky.this, getString(R.string.signup_error), Toast.LENGTH_SHORT).show();
+                pas.setText("");
+                repas.setText("");
             }
-            bufferedReader.close();
+
         }
-        catch(Exception e)
-        {
-            e.printStackTrace();
-        }
-        return content.toString();
     }
+
 
 
 }

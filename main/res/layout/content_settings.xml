@@ -15,7 +15,7 @@
     android:orientation="vertical">
 
     <TextView
-        android:text="Font"
+        android:text="@string/typeface"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textView4"
@@ -29,7 +29,7 @@
         android:layout_marginLeft="8dp" />
 
     <TextView
-        android:text="Text size"
+        android:text="@string/size"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textView5"
@@ -43,7 +43,7 @@
         android:layout_marginLeft="8dp" />
 
     <TextView
-        android:text="Reading style"
+        android:text="@string/style"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textView6"
@@ -55,5 +55,15 @@
         android:layout_height="wrap_content"
         android:id="@+id/spnStyle"
         android:layout_marginLeft="8dp" />
+
+    <Button
+        android:text="@string/save"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:background="@drawable/greenbutton"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:id="@+id/btnSave" />
+
 
 </LinearLayout>

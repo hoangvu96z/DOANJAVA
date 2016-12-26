@@ -4,47 +4,55 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/navLastest"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Mới cập nhật" />
+            android:icon="@drawable/moinhat"
+            android:title="@string/lastest" />
         <item
             android:id="@+id/navPopular"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Xem nhiều nhất" />
+            android:icon="@drawable/phobien"
+            android:title="@string/mostviewed" />
         <item
             android:id="@+id/navKiemHiep"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Kiếm Hiệp" />
+            android:icon="@drawable/kiemhiep"
+            android:title="@string/herosword" />
         <item
             android:id="@+id/navNgonTinh"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Ngôn tình" />
+            android:icon="@drawable/ngontinh"
+            android:title="@string/love" />
         <item
             android:id="@+id/navTruyenMa"
-            android:icon="@drawable/ic_menu_send"
-            android:title="Truyện Ma"
+            android:icon="@drawable/ghost"
+            android:title="@string/ghost"
             />
         <item
             android:id="@+id/navTruyenTrinhTham"
-            android:icon="@drawable/ic_menu_send"
-            android:title="Trinh Thám"
+            android:icon="@drawable/trinhtham"
+            android:title="@string/reconnoitre"
             />
         <item
             android:id="@+id/navTruyenTeen"
-            android:icon="@drawable/ic_menu_send"
-            android:title="Truyện Teen"
+            android:icon="@drawable/truyenteen"
+            android:title="@string/teen"
             />
     </group>
 
     <item android:title="Cá nhân">
         <menu>
             <item
+                android:id="@+id/nav_favorite"
+                android:icon="@drawable/like"
+                android:title="@string/favorite" />
+            <item
                 android:id="@+id/nav_register"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Đăng ký" />
+                android:icon="@drawable/signup"
+                android:title="@string/title_activity_dangky" />
             <item
                 android:id="@+id/nav_sign_in"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Đăng nhập" />
+                android:icon="@drawable/signin"
+                android:title="@string/signin" />
+            <item
+                android:id="@+id/nav_sign_out"
+                android:icon="@drawable/signout"
+                android:title="@string/signout" />
         </menu>
     </item>
 
